@@ -8,6 +8,7 @@
    "golang": {
      "enabled": true
    },
+   "schedule": ["cron(0 15 */2 * * *)"],
    "packageRules": [
      {
        "matchDatasources": ["golang-version"],
