@@ -14,10 +14,6 @@
       "rangeStrategy": "bump"
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    },
-    {
       "matchManagers": ["gomod"],
       "groupName": "Go updates",
       "postUpdateOptions": ["gomodTidy"]
