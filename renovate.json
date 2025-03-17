@@ -1,27 +1,27 @@
 {
-   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-   "extends": [
-     "config:recommended"
-   ],
-   "enabledManagers": ["gomod"],
-   "postUpdateOptions": [
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "enabledManagers": ["gomod", "dockerfile", "github-actions"],
+  "postUpdateOptions": [
     "gomodTidy"
-   ],
-   "golang": {
-     "enabled": true
-   },
-   "packageRules": [
-     {
-       "matchDatasources": ["golang-version"],
-       "matchDepNames": ["go"],
-       "rangeStrategy": "bump"
-     },
-     {
-       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-     },
-     {
-       "matchManagers": ["gomod"],
-       "groupName": "Go updates"
-     },
-   ],
+  ],
+  "golang": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["golang-version"],
+      "matchDepNames": ["go"],
+      "rangeStrategy": "bump"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
+    {
+      "matchManagers": ["gomod"],
+      "groupName": "Go updates"
+    }
+  ]
 }
