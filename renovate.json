@@ -20,7 +20,6 @@
      },
      {
        "matchManagers": ["gomod"],
-       "groupName": "Go updates"
        "groupName": "Go updates",
        "postUpdateOptions": ["gomodTidy"]
      },
@@ -34,4 +33,4 @@
      }
    ],
    "platformAutomerge": true
- }
+}
