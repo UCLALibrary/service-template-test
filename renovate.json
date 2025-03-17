@@ -5,7 +5,8 @@
   ],
   "enabledManagers": ["gomod", "dockerfile", "github-actions"],
   "golang": {
-    "enabled": true
+    "enabled": true,
+    "gomodTidy": true
   },
   "packageRules": [
     {
@@ -27,5 +28,13 @@
       "groupName": "GitHub Actions updates"
     }
   ],
-  "platformAutomerge": true
+  "platformAutomerge": true,
+  "separateMinorPatch": true,
+  "postUpgradeTasks": {
+    "commands": [
+      "go mod tidy"
+    ],
+    "fileFilters": ["go.mod", "go.sum"],
+    "binarySource": "docker"
+  }
 }
