@@ -8,7 +8,8 @@
      "enabled": true
    },
    "postUpdateOptions": [
-    "gomodTidy"
+    "gomodTidy",
+    "gomodUpdateImportPaths"
    ],
    "packageRules": [
      {
