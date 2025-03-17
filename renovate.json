@@ -7,6 +7,9 @@
    "golang": {
      "enabled": true
    },
+   "postUpdateOptions": [
+    "gomodTidy"
+   ],
    "packageRules": [
      {
        "matchDatasources": ["golang-version"],
