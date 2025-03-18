@@ -8,7 +8,7 @@
    "golang": {
      "enabled": true
    },
-   "schedule": ["* * * * 1,5"],
+   "schedule": ["* * * * 1,4"],
    "packageRules": [
      {
        "matchDatasources": ["golang-version"],
